@@ -2,7 +2,7 @@
 
 Obsidian Arc — a self-hosted multi-user AI chat service and OpenAI/Anthropic-compatible API gateway in one Go binary. Deploy on Railway with one click.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/TEMPLATE_CODE)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mHDz4k)
 
 This repository packages the official [Obsidian Arc](https://github.com/OnyxAxisOwO/ObsidianArc) image (`ghcr.io/onyxaxisowo/obsidianarc:v0.12.1`, MIT) for Railway. It is an independent community packaging, not affiliated with or endorsed by the Obsidian Arc project (and unrelated to the Obsidian note-taking app).
 
