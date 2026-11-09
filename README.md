@@ -8,7 +8,8 @@ This repository packages the official [Obsidian Arc](https://github.com/OnyxAxis
 
 ## What you get
 
-- One service from `ghcr.io/onepush-dev/obsidian-arc:0.12.1`: upstream binary unmodified, SQLite on a Railway volume at `/data`.
+- One service from `ghcr.io/onepush-dev/obsidian-arc:0.12.1`: the upstream v0.12.1 binary unmodified on Alpine, SQLite on a Railway volume at `/data`.
+- **Registration closed on first boot**: upstream ships with open sign-up; the start script signs in as the admin once and turns public registration off, so strangers can't sign up and spend your provider keys. Switch to open or invite-only in the admin console when you want (set `RAILWAY_CLOSE_REGISTRATION=false` to skip this).
 - **Admin from the first second**: `OBSIDIAN_ADMIN_PASSWORD` is generated per deploy and the `admin` account is created on first boot, so the first visitor can't claim the instance.
 - **`OBSIDIAN_SECRET_KEY`** generated per deploy (encrypts stored provider credentials; keep it, or they become unreadable).
 - `OBSIDIAN_PUBLIC_URL` set to your Railway domain (OIDC issuer, OAuth callbacks, mail links).
